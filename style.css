@@ -1,5 +1,5 @@
 body{
-    /* background: url("https://static.vecteezy.com/system/resources/previews/017/551/259/non_2x/lovely-banner-template-with-neon-lights-hearts-with-glow-effect-and-copy-space-for-text-happy-valentines-day-panoramic-background-in-cool-trendy-style-romance-greeting-web-banner-layout-vector.jpg"); */
+    background: url("https://static.vecteezy.com/system/resources/previews/017/551/259/non_2x/lovely-banner-template-with-neon-lights-hearts-with-glow-effect-and-copy-space-for-text-happy-valentines-day-panoramic-background-in-cool-trendy-style-romance-greeting-web-banner-layout-vector.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -7,15 +7,19 @@ body{
     height: 100vh;
     font-family: Arial, sans-serif;
 }
+
 .container{
     width: 490px;
-    padding: 2em  3em;
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 4em  4em;
+    background-color: rgba(38, 38, 38, 0.8);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px); /* Adjust the blur radius as needed */
+    border: 2px solid rgba(255, 0, 251, 0.433);
 }
 h1{
     margin-bottom: 20px;
+
 }
 .user-input{
     height: 3em;
@@ -27,6 +31,8 @@ h1{
     padding-left: 1em;
     font-size: 1.2rem;
     width: 60%;
+    background: transparent;
+    color: aliceblue;
     
 }
 .search-btn{
@@ -53,6 +59,7 @@ h1{
 .word-itself p{
     font-size: 2rem;
     font-weight: 700;
+    color: aliceblue;
 }
 .word-itself ion-icon{
     font-size: 1.5em;
@@ -61,24 +68,40 @@ h1{
 }
 .type-of-word{
     font-size: .9rem;
- color: gray;
- margin-top: -1.4em;
+    color: rgb(234, 234, 234);
+    margin-top: -1.4em;
 }
 #wordDefinition{
     margin-top: 2em;
-    color: rgb(71, 71, 71);
+    color: rgb(226, 226, 226);
+    font-size: 1.2rem;
 }
 #wordExampleSentences{
     margin-top: 2em;
     border-left: 4px solid rgb(225, 0, 255);
     padding-left: 1.5em;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.6;
-    color: rgb(99, 99, 99);
+    color: rgb(202, 202, 202);
     word-wrap: break-word;
     margin-bottom: 1em;
     max-width: 80%;
     overflow-wrap: break-word;
     font-weight: lighter;
+}
+#wordSynonyms{
+    margin-top: 2em;
+    color: rgb(185, 185, 185);
+    font-size: 1.2rem;
+    font-weight: lighter;
+
+}
+#wordSynonyms span{
+    font-weight: bold;
+    margin-right: 5px;
+    color: rgb(233, 62, 255);
+}
+h3{
+    color: white;
 }
